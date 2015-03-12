@@ -1,13 +1,11 @@
 package chess.pieces;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 import chess.board.Board;
-import chess.board.Square;
 import chess.utils.Location;
 
 public class Queen implements Piece {
@@ -47,11 +45,6 @@ public class Queen implements Piece {
 		this.position = position;
 	}
 
-	@Override
-	public Collection<Square> getPossibleMoves(Board board) {
-		// TODO Auto-generated method stub
-		return null;
-	}
 	
 	private Map<String, List<Location>> getMoves(){
 		Map<String, List<Location>> result = new HashMap<String, List<Location>>();

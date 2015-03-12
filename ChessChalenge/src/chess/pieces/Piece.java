@@ -1,9 +1,6 @@
 package chess.pieces;
 
-import java.util.Collection;
-
 import chess.board.Board;
-import chess.board.Square;
 import chess.utils.Location;
 
 public interface Piece {
@@ -12,5 +9,4 @@ public interface Piece {
 	
 	boolean hasPiecesOnAllWays(Board board);
 	Location getPosition();
-	Collection<Square> getPossibleMoves(Board board);
 }

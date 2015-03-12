@@ -1,11 +1,9 @@
 package chess.pieces;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 
 import chess.board.Board;
-import chess.board.Square;
 import chess.utils.Location;
 
 public class King implements Piece {
@@ -40,12 +38,6 @@ public class King implements Piece {
 		moves.add(new Location(1,-1));
 		
 		return moves;
-	}
-
-	@Override
-	public Collection<Square> getPossibleMoves(Board board) {
-		// TODO Auto-generated method stub
-		return null;
 	}
 
 	@Override

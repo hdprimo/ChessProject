@@ -1,26 +1,15 @@
 package chess.pieces;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 
 import chess.board.Board;
-import chess.board.Square;
 import chess.utils.Location;
 
 public class Bishop implements Piece {
 
-	private Collection<Square> possibleMoves;
 	private Location position;
 	
-	
-	@Override
-	public Collection<Square> getPossibleMoves(Board board) {
-		possibleMoves = new ArrayList<Square>();
-		
-		return possibleMoves;
-	}
-
 	@Override
 	public boolean hasPiecesOnAllWays(Board board) {
 		List<Location> moves = getMoves();

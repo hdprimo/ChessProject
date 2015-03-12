@@ -1,13 +1,9 @@
 package chess.pieces;
 
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 import chess.board.Board;
-import chess.board.Square;
 import chess.utils.Location;
 
 public class Rook implements Piece {
@@ -77,12 +73,6 @@ public class Rook implements Piece {
 	@Override
 	public Location getPosition() {
 		return position;
-	}
-
-	@Override
-	public Collection<Square> getPossibleMoves(Board board) {
-		// TODO Auto-generated method stub
-		return null;
 	}
 
 	public void setPosition(Location position) {
